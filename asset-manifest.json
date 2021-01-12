@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/westlife0615/iamman/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/westlife0615/iamman/static/js/main.6a31854d.chunk.js",
-    "main.js.map": "/westlife0615/iamman/static/js/main.6a31854d.chunk.js.map",
-    "runtime-main.js": "/westlife0615/iamman/static/js/runtime-main.c92fb12e.js",
-    "runtime-main.js.map": "/westlife0615/iamman/static/js/runtime-main.c92fb12e.js.map",
-    "static/js/2.83ca3da6.chunk.js": "/westlife0615/iamman/static/js/2.83ca3da6.chunk.js",
-    "static/js/2.83ca3da6.chunk.js.map": "/westlife0615/iamman/static/js/2.83ca3da6.chunk.js.map",
-    "static/js/3.168f1304.chunk.js": "/westlife0615/iamman/static/js/3.168f1304.chunk.js",
-    "static/js/3.168f1304.chunk.js.map": "/westlife0615/iamman/static/js/3.168f1304.chunk.js.map",
-    "index.html": "/westlife0615/iamman/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/westlife0615/iamman/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.83ca3da6.chunk.js.LICENSE.txt": "/westlife0615/iamman/static/js/2.83ca3da6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/westlife0615/iamman/static/media/logo.6ce24c58.svg"
+    "main.css": "/iamman/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/iamman/static/js/main.6a31854d.chunk.js",
+    "main.js.map": "/iamman/static/js/main.6a31854d.chunk.js.map",
+    "runtime-main.js": "/iamman/static/js/runtime-main.a08d2033.js",
+    "runtime-main.js.map": "/iamman/static/js/runtime-main.a08d2033.js.map",
+    "static/js/2.83ca3da6.chunk.js": "/iamman/static/js/2.83ca3da6.chunk.js",
+    "static/js/2.83ca3da6.chunk.js.map": "/iamman/static/js/2.83ca3da6.chunk.js.map",
+    "static/js/3.168f1304.chunk.js": "/iamman/static/js/3.168f1304.chunk.js",
+    "static/js/3.168f1304.chunk.js.map": "/iamman/static/js/3.168f1304.chunk.js.map",
+    "index.html": "/iamman/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/iamman/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.83ca3da6.chunk.js.LICENSE.txt": "/iamman/static/js/2.83ca3da6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/iamman/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c92fb12e.js",
+    "static/js/runtime-main.a08d2033.js",
     "static/js/2.83ca3da6.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.6a31854d.chunk.js"
