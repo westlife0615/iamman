@@ -1,26 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from "./components/button/button";
+import {BlogDetail} from "./components/blog-detail/blog-detail";
+
+const a: JSX.Element = (<div></div>)
+
+let buttonName = "눌러주세요. 명령이다 !!!";
+let buttonNames = [1, 2, 3, 4, 5, 6, 7, 8]
+
+function afterClicked() {
+    alert("Ronaldo !!! goal !!! ")
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={"https://i.imgur.com/cGnKRFK.gif"} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BlogDetail color={"빨강색"}></BlogDetail>
+        </div>
+    );
 }
 
 export default App;
