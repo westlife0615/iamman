@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Button from "./components/button/button";
 import {BlogDetail} from "./components/blog-detail/blog-detail";
+import {Header} from "./components/header/header";
 
 const a: JSX.Element = (<div></div>)
 
@@ -16,6 +17,7 @@ function afterClicked() {
 function App() {
     return (
         <div className="App">
+            <Header></Header>
             <BlogDetail color={"빨강색"}></BlogDetail>
         </div>
     );
