@@ -13,6 +13,7 @@ export const BlogDetail = (props: DetailProps)=>{
 
             <h1>얍 !!!! </h1>
             <img src={"https://i.pinimg.com/originals/79/b6/bf/79b6bf5eb2ddc9ffa920dc46fb681b29.gif"}></img>
+            <img src={"https://ncache.ilbe.com/files/attach/new/20160102/14357299/2376960421/7229557588/c8eaf0968deec988b3a7b9a17fe4fe27.gif"}></img>
             <table>
                 <tr>123</tr>
                 <tr>456</tr>
