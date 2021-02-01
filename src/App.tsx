@@ -1,25 +1,62 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Route} from 'react-router-dom'
 import './App.css';
-import Button from "./components/button/button";
-import {BlogDetail} from "./components/blog-detail/blog-detail";
 import {Header} from "./components/header/header";
+import SideNav from "./components/side-nav/SideNav";
 
-const a: JSX.Element = (<div></div>)
-
-let buttonName = "눌러주세요. 명령이다 !!!";
-let buttonNames = [1, 2, 3, 4, 5, 6, 7, 8]
-
-function afterClicked() {
-    alert("Ronaldo !!! goal !!! ")
+export type NavigationGroup = {
+    text: string,
+    component: JSX.Element
 }
 
+export const INITIAL_NAV_GROUP_LIST: NavigationGroup[] = [
+    {
+        text: "게시글 리스트",
+        component: <div><img
+            src={"https://img.huffingtonpost.com/asset/5d708e2f2400004f0075b4e8.jpeg?ops=scalefit_630_noupscale"}
+            style={{width: "100%", height: 'auto'}}/></div>
+    },
+    {
+        text: "상세 페이지",
+        component: <div><img src={"http://ojsfile.ohmynews.com/STD_IMG_FILE/2011/0525/IE001309768_STD.jpg"}
+                             style={{width: "100%", height: 'auto'}}/></div>
+    },
+    {
+        text: "글쓰기",
+        component: <div><img src={"https://www.chrischae.kr/content/images/size/w2000/2019/12/SteveJobsCloseUp-2.jpeg"}
+                             style={{width: "100%", height: 'auto'}}/></div>
+    },
+]
+
 function App() {
+    let navigationGroupList: NavigationGroup[] = INITIAL_NAV_GROUP_LIST;
+
     return (
-        <div className="App">
-            <Header></Header>
-            <BlogDetail color={"빨강색"}></BlogDetail>
-        </div>
+        <BrowserRouter basename={"/iamman"}>
+            <React.Fragment>
+                <SideNav navigationGroupList={navigationGroupList}>
+                    <Header/>
+                    <Route path={"/"} exact={true}>
+
+                    </Route>
+                    {/*<Route path={"/login"} exact={true}>*/}
+                    {/*    <React.Fragment>*/}
+                    {/*        <div style={{margin: "20px"}}>*/}
+                    {/*            <input type={"text"} placeholder={"이메일을 입력하세요."} style={{width: '90%', height: '30px', fontSize: '20px'}}/>*/}
+                    {/*        </div>*/}
+                    {/*        <div style={{margin: "20px"}}>*/}
+                    {/*            <input type={"password"} placeholder={"비밀번호를 입력하요."} style={{width: '90%', height: '30px', fontSize: '20px'}}/>*/}
+                    {/*        </div>*/}
+                    {/*        <div style={{margin: "20px"}}>*/}
+                    {/*            <button>로그인</button>*/}
+                    {/*        </div>*/}
+
+                    {/*    </React.Fragment>*/}
+                    {/*</Route>*/}
+                </SideNav>
+            </React.Fragment>
+
+        </BrowserRouter>
     );
 }
 

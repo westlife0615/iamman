@@ -1,21 +1,36 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const mystyle = {
-    color: "white",
-    backgroundColor: "DodgerBlue",
+    color: "black",
+    backgroundColor: "white",
     padding: "10px",
     fontFamily: "Arial"
 };
 
-export const Header = ()=>{
+const headerNavFontStyle = {
+    fontSize: "40px",
+    color: "#ff00ff"
+};
+
+const headerNavViewStyle = {
+    padding: "10px",
+    cursor: "pointer"
+};
+
+export const Header: React.FC = ()=>{
     return (
-        <table>
-            <td style={mystyle}>홈</td>
-            <td style={mystyle}>게시물</td>
-            <td style={mystyle}>공지사항</td>
-            <td style={mystyle}>게시판</td>
-            <td style={mystyle}>콘택트</td>
-        </table>
+        <div style={{
+            display: "flex",
+            justifyContent: "center"
+        }}>
+            <NavLink to={"/"}>
+                <div style={{...headerNavFontStyle, ...headerNavViewStyle}}>홈</div>
+            </NavLink>
+            {/*<NavLink to={"/login"}>*/}
+            {/*    <div style={{...headerNavFontStyle, ...headerNavViewStyle}}>로그인</div>*/}
+            {/*</NavLink>*/}
+        </div>
     )
 }
 

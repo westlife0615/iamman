@@ -1,24 +1,45 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 interface DetailProps {
-    color : string
+    color? : string,
+    number?: number
 }
 
 export const BlogDetail = (props: DetailProps)=>{
+
+    // const [a,setA ]= useState(1)
+
+    var brList = ()=>{
+        // var list = new Array(5);
+        // return list.map(()=>{
+        //     return <br/>
+        // })
+        return [...Array(6)].map(()=>{
+            return <br/>
+        })
+    }
+
+    var conditionalFC = (a: any)=>{
+        console.log(a);
+        // setA(2)
+        if(a == 0){
+            return <h1>게시글 리스트 </h1>
+        }else if(a == 1){
+            return <h1>상세 페이지</h1>
+        }else if(a == 2){
+            return <h1>글적기</h1>
+        }
+    }
+
     return (
         <div>
-            <h1>난 {props.color}색이 좋아</h1><br></br>
-            <h1>이거참 뿌듯하구만</h1><br></br>
-             <h3>햄버거 맞나군</h3>
+            {
+                brList()
+            }
+            {
+                conditionalFC(props.number)
+            }
 
-            <h1>얍 !!!! </h1>
-            <img src={"https://i.pinimg.com/originals/79/b6/bf/79b6bf5eb2ddc9ffa920dc46fb681b29.gif"}></img>
-            <img src={"https://ncache.ilbe.com/files/attach/new/20160102/14357299/2376960421/7229557588/c8eaf0968deec988b3a7b9a17fe4fe27.gif"}></img>
-            <table>
-                <tr>123</tr>
-                <tr>456</tr>
-                <tr>789</tr>
-            </table>
         </div>
     )
 }
