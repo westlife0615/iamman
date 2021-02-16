@@ -27,9 +27,6 @@ export const Header: React.FC = ()=>{
             <NavLink to={"/"}>
                 <div style={{...headerNavFontStyle, ...headerNavViewStyle}}>홈</div>
             </NavLink>
-            {/*<NavLink to={"/login"}>*/}
-            {/*    <div style={{...headerNavFontStyle, ...headerNavViewStyle}}>로그인</div>*/}
-            {/*</NavLink>*/}
         </div>
     )
 }

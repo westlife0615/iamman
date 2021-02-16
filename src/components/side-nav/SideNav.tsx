@@ -37,9 +37,9 @@ const SideNav = (props: SideNavProps) => {
         <div style={ {padding: "10px", cursor: "pointer"} }>
           <NavLink to={ "/list" }>리스트</NavLink>
         </div>
-        <div style={ {padding: "10px", cursor: "pointer"} }>
-          <NavLink to={ "/detail" }>상세페이지</NavLink>
-        </div>
+        {/*<div style={ {padding: "10px", cursor: "pointer"} }>*/}
+        {/*  <NavLink to={ "/detail" }>상세페이지</NavLink>*/}
+        {/*</div>*/}
         <div style={ {padding: "10px", cursor: "pointer"} }>
           <NavLink to={ "/write" }>글쓰기</NavLink>
         </div>
