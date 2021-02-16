@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/iamman/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/iamman/static/js/main.e72efac7.chunk.js",
-    "main.js.map": "/iamman/static/js/main.e72efac7.chunk.js.map",
+    "main.js": "/iamman/static/js/main.161e935b.chunk.js",
+    "main.js.map": "/iamman/static/js/main.161e935b.chunk.js.map",
     "runtime-main.js": "/iamman/static/js/runtime-main.38f802db.js",
     "runtime-main.js.map": "/iamman/static/js/runtime-main.38f802db.js.map",
-    "static/js/2.1a01d450.chunk.js": "/iamman/static/js/2.1a01d450.chunk.js",
-    "static/js/2.1a01d450.chunk.js.map": "/iamman/static/js/2.1a01d450.chunk.js.map",
+    "static/js/2.88be444d.chunk.js": "/iamman/static/js/2.88be444d.chunk.js",
+    "static/js/2.88be444d.chunk.js.map": "/iamman/static/js/2.88be444d.chunk.js.map",
     "static/js/3.ff007bcf.chunk.js": "/iamman/static/js/3.ff007bcf.chunk.js",
     "static/js/3.ff007bcf.chunk.js.map": "/iamman/static/js/3.ff007bcf.chunk.js.map",
     "index.html": "/iamman/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/iamman/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.1a01d450.chunk.js.LICENSE.txt": "/iamman/static/js/2.1a01d450.chunk.js.LICENSE.txt"
+    "static/js/2.88be444d.chunk.js.LICENSE.txt": "/iamman/static/js/2.88be444d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.38f802db.js",
-    "static/js/2.1a01d450.chunk.js",
+    "static/js/2.88be444d.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.e72efac7.chunk.js"
+    "static/js/main.161e935b.chunk.js"
   ]
 }
