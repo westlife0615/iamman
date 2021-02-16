@@ -17,7 +17,7 @@ const Detail = () => {
       <br/>
       <br/>
       <h1>{getId(params)}번째 글.</h1>
-      <img src={ "http://ojsfile.ohmynews.com/STD_IMG_FILE/2011/0525/IE001309768_STD.jpg" }
+      <img src={ "https://extmovie.maxmovie.com/xe/files/attach/images/135/600/898/016/b7b4f23a77f05bea311f2da34c8b72f2.gif" }
            style={ {width: "100%", height: 'auto'} }/>
     </div>
   )
