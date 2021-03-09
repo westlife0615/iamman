@@ -1,11 +1,13 @@
 import React, {ReactElement} from 'react';
 import blogList from '../../data/blogList'
+import {useHistory} from "react-router-dom";
 
 const randomColor = (): number=>{
   return Math.round(Math.random() * 1000000);
 }
 
 export const List = (): ReactElement => {
+  const history = useHistory();
   return <div className="main-page">
     <div className="main-wrapper">
       <h1>블로그</h1>
@@ -17,6 +19,9 @@ export const List = (): ReactElement => {
           return <div className="main-blog-item"
                       style={ {
                         backgroundColor: '#' + randomColor()
+                      } }
+                      onClick={ () => {
+                        history.push('detail')
                       } }
           >
             <span>{ i }</span>
