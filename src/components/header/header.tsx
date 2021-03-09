@@ -1,12 +1,19 @@
 import React, {ReactElement} from 'react';
 import { useHistory } from "react-router-dom";
 
+const randomColor = (): number => {
+  return Math.round(Math.random() * 100000);
+}
 
 export const Header = ():ReactElement => {
   const history = useHistory();
   
   return (
-    <div className="header-container">
+    <div className="header-container"
+         style={ {
+           backgroundColor: '#' + randomColor()
+         }}
+      >
       <div className="header-wrapper header-home-wrapper"
            onClick={()=>{
              history.push('main');
