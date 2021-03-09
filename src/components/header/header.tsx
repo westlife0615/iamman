@@ -1,34 +1,26 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React, {ReactElement} from 'react';
+import { useHistory } from "react-router-dom";
 
-const mystyle = {
-    color: "black",
-    backgroundColor: "white",
-    padding: "10px",
-    fontFamily: "Arial"
-};
 
-const headerNavFontStyle = {
-    fontSize: "40px",
-    color: "#ff00ff"
-};
-
-const headerNavViewStyle = {
-    padding: "10px",
-    cursor: "pointer"
-};
-
-export const Header: React.FC = ()=>{
-    return (
-        <div style={{
-            display: "flex",
-            justifyContent: "center"
-        }}>
-            <NavLink to={"/"}>
-                <div style={{...headerNavFontStyle, ...headerNavViewStyle}}>홈</div>
-            </NavLink>
-        </div>
-    )
+export const Header = ():ReactElement => {
+  const history = useHistory();
+  
+  return (
+    <div className="header-container">
+      <div className="header-wrapper header-home-wrapper"
+           onClick={()=>{
+             history.push('main');
+           }}>
+        형욱 블로그
+      </div>
+      <div className="header-wrapper"
+           onClick={()=>{
+             history.push('list');
+           }}>
+        게시글 보러가기
+      </div>
+    </div>
+  )
 }
 
 // export default BlogDetail
